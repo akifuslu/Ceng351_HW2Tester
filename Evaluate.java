@@ -26,7 +26,7 @@ public class Evaluate {
         if(outputDir.equals("")) // no path has been given
             return;
         try {
-            writeFile(res, "src/ceng/ceng351/labdb/your_outputs/output" + testId + ".txt");
+            writeFile(res, outputDir + testId + ".txt");
         } catch (IOException e) {
             e.printStackTrace();
         }
